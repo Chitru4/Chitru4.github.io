@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Chitraksh Kumar's GitHub Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #333;
@@ -30,6 +33,7 @@
             background-color: #555;
         }
         main {
+            flex: 1;
             padding: 2rem;
             max-width: 800px;
             margin: 0 auto;
@@ -39,21 +43,29 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My GitHub Page</h1>
+    <h1>Welcome to Chitraksh Kumar's GitHub Page</h1>
 </header>
 
 <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
+    <a href="#competitive-programming">Competitive Programming</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -62,14 +74,33 @@
         <h2>About Me</h2>
         <p>Welcome to my GitHub Page! Here you'll find information about my projects, interests, and more.</p>
         <li><a href="https://www.chess.com/member/chitru">Challenge me on @Chess.com</a></li>
+        <li><a href="https://github.com/Chitru4">Visit my Github account</a></li>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><a href="https://github.com/Chitru4/OnlineBanking">Project 1</a></li>
-            <li><a href="https://github.com/Chitru4/WordCounterRestAPI">Project 2</a></li>
-            <li><a href="https://github.com/Chitru4/Digit_Identification">Project 3</a></li>
+            <li>
+                <a href="https://github.com/Chitru4/OnlineBanking">OnlineBanking</a>
+                <p>A comprehensive online banking system that supports various transactions, user accounts, and secure login mechanisms.</p>
+            </li>
+            <li>
+                <a href="https://github.com/Chitru4/WordCounterRestAPI">WordCounterRestAPI</a>
+                <p>A REST API that provides word count functionality for given texts. It supports various text formats and returns results in JSON format.</p>
+            </li>
+            <li>
+                <a href="https://github.com/Chitru4/Digit_Identification">Digit Identification</a>
+                <p>A machine learning project that identifies handwritten digits using a neural network model trained on the MNIST dataset.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="competitive-programming">
+        <h2>Competitive Programming Profiles</h2>
+        <ul>
+            <li><a href="https://leetcode.com/u/chitraksh24/">LeetCode</a></li>
+            <li><a href="https://www.codechef.com/users/chitru4">CodeChef</a></li>
+            <li><a href="https://codeforces.com/profile/Chitru4">Codeforces</a></li>
         </ul>
     </section>
 
@@ -85,3 +116,4 @@
 
 </body>
 </html>
+
